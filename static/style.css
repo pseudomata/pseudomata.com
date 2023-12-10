@@ -26,20 +26,6 @@
     font-weight: 200 800;
     font-style: oblique -11deg 0deg
 }
-@font-face {
-    font-family: "Fira Code";
-    src: url("/fonts/FiraCode.woff2") format('woff2');
-    font-weight: 300 700;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: "Inter";
-    src: url("/fonts/Inter.woff2") format('woff2');
-    font-weight: 100 900;
-    font-style: normal;
-    font-display: swap;
-}
 html {
     max-width: 910px;
     margin: auto;
@@ -73,6 +59,11 @@ code {
 main {
     max-width: 700px;
     margin: auto;
+}
+@media screen and (min-width: 600px) {
+    main {
+        margin-left: 6rem;
+    }
 }
 header {
     margin-top: 2rem;
