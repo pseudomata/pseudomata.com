@@ -46,7 +46,7 @@ code {
     font-family: 'Monaspace Neon';
     font-feature-settings: 'calt' 1, 'dlig' 1, 'ss01' 1,'ss02' 1, 'ss03' 1,'ss04' 1,'ss05' 1,'ss06' 1,'ss07' 1,'ss08' 1;
     font-size: 1rem;
-    padding: 0.1rem 0.2rem;
+    padding: 0.2rem 0.2rem 0.1rem 0.2rem;
     background: #29242f0f;
     border: 0.01rem solid #29242f26;
     border-radius: 2px;
@@ -88,6 +88,9 @@ a.nav-link {
     font-size: 1.75rem;
     text-decoration: none;
     margin-right: 1rem;
+}
+b.current-nav {
+    font-weight: 600;
 }
 a.nav-link:hover {
     color: var(--link-decoration);
