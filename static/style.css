@@ -26,6 +26,20 @@
     font-weight: 200 800;
     font-style: oblique -11deg 0deg
 }
+@font-face {
+    font-family: "Fira Code";
+    src: url("/fonts/FiraCode.woff2") format('woff2');
+    font-weight: 300 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Inter";
+    src: url("/fonts/Inter.woff2") format('woff2');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
 html {
     max-width: 910px;
     margin: auto;
@@ -43,7 +57,8 @@ body {
     -webkit-text-size-adjust: none;
 }
 code {
-    font-family: 'Monaspace Neon';
+    /* font-family: 'Monaspace Neon'; */
+    font-family: 'Fira Code';
     font-size: 1rem;
     padding: 0.1rem 0.2rem;
     background: #29242f0f;
