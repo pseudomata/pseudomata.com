@@ -194,5 +194,5 @@ ul.writing {
 li.writing {
     font-size: 2rem;
     font-stretch: 75%;
-    line-height: 3rem;
+    padding-bottom: 1.5rem;
 }
