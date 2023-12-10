@@ -197,3 +197,6 @@ li.writing {
     font-stretch: 75%;
     padding-bottom: 1.5rem;
 }
+li.writing:hover {
+    color: var(--link-decoration);
+}
