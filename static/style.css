@@ -188,7 +188,11 @@ ul {
 }
 ul.writing {
     list-style-type: none;
+    padding: 0;
+    text-transform: capitalize;
 }
 li.writing {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    font-stretch: 75%;
+    line-height: 3rem;
 }
