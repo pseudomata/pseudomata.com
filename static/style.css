@@ -90,7 +90,7 @@ a.nav-link {
     margin-right: 1rem;
 }
 a.nav-link:hover {
-    color: var(--link-hover);
+    color: var(--link-decoration);
 }
 @media screen and (max-width: 600px) {
     header {
