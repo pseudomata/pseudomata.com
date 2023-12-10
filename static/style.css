@@ -1,69 +1,128 @@
 :root {
     --primary: #29242f;
     --link: #29242f;
-    /* --link: #9e8ef8; */
+    --link-hover: #9e8ef8;
 }
 @font-face {
     font-family: 'Hubot Sans';
-    src: url('/fonts/Hubot-Sans.woff2') format('woff2 supports variations'),
-         url('/fonts/Hubot-Sans.woff2') format('woff2-variations');
+    src: url('fonts/Hubot-Sans.woff2') format('woff2 supports variations'),
+         url('fonts/Hubot-Sans.woff2') format('woff2-variations');
     font-weight: 200 900;
     font-stretch: 75% 125%;
     font-display: swap;
 }
 @font-face {
     font-family: 'Mona Sans';
-    src: url('/fonts/Mona-Sans.woff2') format('woff2 supports variations'),
-         url('/fonts/Mona-Sans.woff2') format('woff2-variations');
+    src: url('fonts/Mona-Sans.woff2') format('woff2 supports variations'),
+         url('fonts/Mona-Sans.woff2') format('woff2-variations');
     font-weight: 200 900;
     font-stretch: 75% 125%;
     font-display: swap;
 }
 @font-face {
     font-family: 'Monaspace Neon';
-    src: url('/fonts/Monaspace-Neon.woff2') format('woff2');
+    src: url('fonts/Monaspace-Neon.woff2') format('woff2');
     font-display: swap;
     font-weight: 200 800;
     font-style: oblique -11deg 0deg
 }
 html {
-
+    max-width: 910px;
+    margin: auto;
 }
 body {
     font-family: 'Mona Sans', system-ui, sans-serif;
     font-feature-settings: 'ss01';
     font-size: 1.1rem;
     font-weight: 400;
-    line-height: 1.4rem;
+    line-height: 1.6rem;
     word-break: break-word;
     color: var(--primary);
     -webkit-font-smoothing: auto;
     -moz-osx-font-smoothing: auto;
     -webkit-text-size-adjust: none;
-    margin: 2rem;
+}
+code {
+    font-family: 'Monaspace Neon';
+    font-size: 1rem;
+}
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 1rem;
+    }
+}
+main {
+    max-width: 700px;
+    margin: auto;
 }
 header {
-    margin-top: 1rem;
+    margin-top: 2rem;
     margin-bottom: 2rem;
 }
+.header-img {
+    width: 4rem;
+    height: 4rem;
+    float: left;
+    border-radius: 2rem;
+    margin-right: 2rem;
+    margin-top: 0.8rem;
+}
+.header-text {
+    font-weight: 800;
+    font-size: 3.3rem;
+}
+a.nav-link {
+    font-family: 'Hubot Sans', system-ui, sans-serif;
+    font-feature-settings: "ss01";
+    font-stretch: 75%;
+    font-size: 1.75rem;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+a.nav-link:hover {
+    color: var(--link-hover);
+}
+@media screen and (max-width: 600px) {
+    header {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .header-img {
+        width: 3rem;
+        height: 3rem;
+    }
+    .header-text {
+        font-size: 2.5rem;
+    }
+    a.nav-link {
+        font-size: 1.5rem;
+        margin-right: 0.5rem;
+    }
+}
+.navigation {
+}
 footer {
-    margin-top: 2rem;
+    margin-top: 3rem;
     margin-bottom: 1rem;
     font-size: 0.9rem;
+    text-align: center;
+}
+@media screen and (max-width: 600px) {
+    footer {
+        font-size: 0.8rem;
+    }
 }
 a {
     color: var(--link);
     text-decoration: underline;
     text-underline-position: from-font;
     text-decoration-thickness: from-font;
-    /* text-decoration: none; */
 }
 a:visited {
     color: var(--link);
 }
 a:hover {
-    /* text-decoration: underline; */
-    /* text-underline-position: from-font; */
+    text-decoration-color: var(--link-hover);
 }
 h1,
 h2,
@@ -73,6 +132,7 @@ h5,
 h6 {
     font-family: 'Hubot Sans', system-ui, sans-serif;
     font-feature-settings: "ss01";
+    font-stretch: 75%;
     margin-top: 0;
     margin-bottom: 0;
     color: var(--primary);
@@ -80,16 +140,30 @@ h6 {
     font-weight: 700;
 }
 h1 {
-    font-size: 2rem;
+    font-size: 2.25rem;
 }
 h2 {
-    font-size: 1.75rem;
+    font-size: 2rem;
 }
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
 }
 h4 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
+}
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.75rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    h4 {
+        font-size: 1.25rem;
+    }
 }
 ul {
     list-style-type: square;
