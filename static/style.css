@@ -188,7 +188,8 @@ ul {
 }
 ul.writing {
     list-style-type: none;
-    padding: 0;
+    padding-left: 0;
+    padding-top: 2rem;
     text-transform: capitalize;
 }
 li.writing {
