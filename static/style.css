@@ -51,6 +51,14 @@ code {
     border: 0.01rem solid #29242f26;
     border-radius: 2px;
 }
+pre.code {
+    font-family: 'Monaspace Neon';
+    font-feature-settings: 'calt' 1, 'dlig' 1, 'ss01' 1,'ss02' 1, 'ss03' 1,'ss04' 1,'ss05' 1,'ss06' 1,'ss07' 1,'ss08' 1;
+    font-size: 1rem;
+    background-color: #efefef;
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: 0.5rem;
+}
 @media screen and (max-width: 600px) {
     body {
         font-size: 1rem;
