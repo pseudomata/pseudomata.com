@@ -2,11 +2,19 @@ module Main where
 
 import qualified Website (generate)
 import System.Directory (doesDirectoryExist)
+import Control.Monad (unless)
 
 -- Paths to directories, assuming the command is run from the root of the repository.
+contentPages :: String
 contentPages = "content/"
+
+staticAssets :: String
 staticAssets = "static/"
+
+templatesDir :: String
 templatesDir = "templates/"
+
+outputDir :: String
 outputDir = "generated/"
 
 checkDirectories :: [String] -> IO ()
@@ -20,7 +28,7 @@ checkDirectoryExistence dir = do
 main :: IO ()
 main = do
   putStrLn "Preliminary checks..."
-  checkDirectories [ contentPages staticAssets templatesDir outputDir ]
+  checkDirectories [contentPages, staticAssets, templatesDir, outputDir]
 
   putStrLn "Generating static webpages..."
   Website.generate contentPages staticAssets templatesDir outputDir
