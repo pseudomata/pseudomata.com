@@ -11,9 +11,6 @@ contentPages = "content/"
 staticAssets :: String
 staticAssets = "static/"
 
-templatesDir :: String
-templatesDir = "templates/"
-
 outputDir :: String
 outputDir = "generated/"
 
@@ -28,7 +25,7 @@ checkDirectoryExistence dir = do
 main :: IO ()
 main = do
   putStrLn "Preliminary checks..."
-  checkDirectories [contentPages, staticAssets, templatesDir, outputDir]
+  checkDirectories [contentPages, staticAssets, outputDir]
 
   putStrLn "Generating static webpages..."
-  Website.generate contentPages staticAssets templatesDir outputDir
+  Website.generate contentPages staticAssets outputDir
