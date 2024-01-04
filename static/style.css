@@ -35,7 +35,7 @@ body {
     font-feature-settings: 'ss01';
     font-size: 1.1rem;
     font-weight: 400;
-    line-height: 1.6rem;
+    line-height: 1.8rem;
     word-break: break-word;
     color: var(--primary);
     -webkit-font-smoothing: auto;
@@ -77,10 +77,13 @@ main {
 }
 @media screen and (min-width: 600px) {
     main {
-        margin-left: 10rem;
+        margin-left: 8rem;
     }
     .navigation {
-        margin-left: 10rem;
+        margin-left: 8rem;
+    }
+    .header-text {
+        margin-left: 8rem;
     }
 }
 header {
@@ -88,12 +91,10 @@ header {
     margin-bottom: 2rem;
 }
 .header-img {
-    width: 8rem;
-    height: 8rem;
+    width: 6rem;
+    height: 6rem;
     float: left;
-    border-radius: 8rem;
-    margin-right: 2rem;
-    margin-top: -1rem;
+    border-radius: 6rem;
 }
 .header-text {
     font-weight: 800;
