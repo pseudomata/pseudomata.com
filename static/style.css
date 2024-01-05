@@ -220,6 +220,7 @@ li.writing {
     line-height: 2rem;
     font-stretch: 75%;
     padding-bottom: 2rem;
+    text-align: left;
 }
 li.writing:hover {
     color: var(--link-decoration);
