@@ -1,7 +1,7 @@
 :root {
     --primary: #29242f;
-    --link: #c1555e;
-    --link-decoration: #e6e8f0;
+    --link: #29242f;
+    --link-decoration: #c35360;
 }
 @font-face {
     font-family: "Hubot Sans";
@@ -132,14 +132,12 @@ a.nav-link {
     font-size: 1.75rem;
     text-decoration: none;
     margin-right: 1rem;
-    color: var(--primary);
 }
 b.current-nav {
-    color: var(--primary);
     font-weight: 600;
 }
 a.nav-link:hover {
-    color: var(--link);
+    color: var(--link-decoration);
 }
 @media screen and (max-width: 600px) {
     header {
@@ -179,7 +177,6 @@ a {
     text-decoration: underline;
     text-decoration-color: var(--link-decoration);
     text-underline-position: from-font;
-    text-decoration-thickness: 0.1rem;
 }
 a:visited {
     color: var(--link);
