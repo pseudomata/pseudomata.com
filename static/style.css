@@ -1,38 +1,40 @@
 :root {
     --primary: #29242f;
-    --link: #29242f;
-    --link-decoration: #c35360;
+    --link: #c1555e;
+    --link-decoration: #e6e8f0;
 }
 @font-face {
-    font-family: 'Hubot Sans';
-    src: url('/fonts/Hubot-Sans.woff2') format('woff2 supports variations'),
-         url('/fonts/Hubot-Sans.woff2') format('woff2-variations');
+    font-family: "Hubot Sans";
+    src:
+        url("/fonts/Hubot-Sans.woff2") format("woff2 supports variations"),
+        url("/fonts/Hubot-Sans.woff2") format("woff2-variations");
     font-weight: 200 900;
     font-stretch: 75% 125%;
     font-display: swap;
 }
 @font-face {
-    font-family: 'Mona Sans';
-    src: url('/fonts/Mona-Sans.woff2') format('woff2 supports variations'),
-         url('/fonts/Mona-Sans.woff2') format('woff2-variations');
+    font-family: "Mona Sans";
+    src:
+        url("/fonts/Mona-Sans.woff2") format("woff2 supports variations"),
+        url("/fonts/Mona-Sans.woff2") format("woff2-variations");
     font-weight: 200 900;
     font-stretch: 75% 125%;
     font-display: swap;
 }
 @font-face {
-    font-family: 'Monaspace Neon';
-    src: url('/fonts/Monaspace-Neon.woff2') format('woff2');
+    font-family: "Monaspace Neon";
+    src: url("/fonts/Monaspace-Neon.woff2") format("woff2");
     font-display: swap;
     font-weight: 200 800;
-    font-style: oblique -11deg 0deg
+    font-style: oblique -11deg 0deg;
 }
 html {
     max-width: 1000px;
     margin: auto;
 }
 body {
-    font-family: 'Mona Sans', system-ui, sans-serif;
-    font-feature-settings: 'ss01';
+    font-family: "Mona Sans", system-ui, sans-serif;
+    font-feature-settings: "ss01";
     font-size: 1.1rem;
     font-weight: 400;
     line-height: 1.8rem;
@@ -43,8 +45,18 @@ body {
     -webkit-text-size-adjust: none;
 }
 code {
-    font-family: 'Monaspace Neon';
-    font-feature-settings: 'calt' 1, 'dlig' 1, 'ss01' 1,'ss02' 1, 'ss03' 1,'ss04' 1,'ss05' 1,'ss06' 1,'ss07' 1,'ss08' 1;
+    font-family: "Monaspace Neon";
+    font-feature-settings:
+        "calt" 1,
+        "dlig" 1,
+        "ss01" 1,
+        "ss02" 1,
+        "ss03" 1,
+        "ss04" 1,
+        "ss05" 1,
+        "ss06" 1,
+        "ss07" 1,
+        "ss08" 1;
     font-size: 1rem;
     padding: 0.2rem 0.2rem 0.1rem 0.2rem;
     background: #29242f0f;
@@ -52,8 +64,18 @@ code {
     border-radius: 2px;
 }
 pre.code {
-    font-family: 'Monaspace Neon';
-    font-feature-settings: 'calt' 1, 'dlig' 1, 'ss01' 1,'ss02' 1, 'ss03' 1,'ss04' 1,'ss05' 1,'ss06' 1,'ss07' 1,'ss08' 1;
+    font-family: "Monaspace Neon";
+    font-feature-settings:
+        "calt" 1,
+        "dlig" 1,
+        "ss01" 1,
+        "ss02" 1,
+        "ss03" 1,
+        "ss04" 1,
+        "ss05" 1,
+        "ss06" 1,
+        "ss07" 1,
+        "ss08" 1;
     font-size: 1rem;
     background-color: #efefef;
     padding: 1rem 1rem 1rem 1rem;
@@ -72,10 +94,10 @@ main {
     text-align: justify;
 }
 .post-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
 }
 @media screen and (min-width: 600px) {
     main {
@@ -104,8 +126,8 @@ header {
     font-size: 3.3rem;
 }
 a.nav-link {
-    font-family: 'Hubot Sans', system-ui, sans-serif;
-    font-feature-settings: 'ss01';
+    font-family: "Hubot Sans", system-ui, sans-serif;
+    font-feature-settings: "ss01";
     font-stretch: 75%;
     font-size: 1.75rem;
     text-decoration: none;
@@ -155,6 +177,7 @@ a {
     text-decoration: underline;
     text-decoration-color: var(--link-decoration);
     text-underline-position: from-font;
+    text-decoration-thickness: 0.1rem;
 }
 a:visited {
     color: var(--link);
@@ -168,8 +191,8 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Hubot Sans', system-ui, sans-serif;
-    font-feature-settings: 'ss01';
+    font-family: "Hubot Sans", system-ui, sans-serif;
+    font-feature-settings: "ss01";
     font-stretch: 75%;
     margin-top: 0;
     margin-bottom: 0;
