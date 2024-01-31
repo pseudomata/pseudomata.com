@@ -135,6 +135,7 @@ a.nav-link {
     color: var(--primary);
 }
 b.current-nav {
+    color: var(--primary);
     font-weight: 600;
 }
 a.nav-link:hover {
