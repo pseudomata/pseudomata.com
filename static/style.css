@@ -138,7 +138,11 @@ b.current-nav {
     font-weight: 600;
 }
 a.nav-link:hover {
-    color: var(--link-decoration);
+    color: var(--link);
+    text-decoration: underline;
+    text-decoration-color: var(--underline-color);
+    text-underline-position: from-font;
+    text-decoration-thickness: 0.1rem;
 }
 @media screen and (max-width: 600px) {
     header {
@@ -247,7 +251,10 @@ li.writing {
     text-align: left;
 }
 li.writing:hover {
-    color: var(--link-decoration);
+    text-decoration: underline;
+    text-decoration-color: var(--underline-color);
+    text-underline-position: from-font;
+    text-decoration-thickness: 0.1rem;
 }
 @media screen and (max-width: 600px) {
     li.writing {
