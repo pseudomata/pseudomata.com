@@ -132,12 +132,13 @@ a.nav-link {
     font-size: 1.75rem;
     text-decoration: none;
     margin-right: 1rem;
+    color: var(--primary);
 }
 b.current-nav {
     font-weight: 600;
 }
 a.nav-link:hover {
-    color: var(--link-decoration);
+    color: var(--link);
 }
 @media screen and (max-width: 600px) {
     header {
