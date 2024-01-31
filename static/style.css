@@ -142,7 +142,6 @@ a.nav-link:hover {
     text-decoration: underline;
     text-decoration-color: var(--underline-color);
     text-underline-position: from-font;
-    text-decoration-thickness: 0.1rem;
 }
 @media screen and (max-width: 600px) {
     header {
@@ -182,7 +181,6 @@ a {
     text-decoration: underline;
     text-decoration-color: var(--underline-color);
     text-underline-position: from-font;
-    text-decoration-thickness: 0.1rem;
 }
 a:visited {
     color: var(--link);
@@ -254,7 +252,6 @@ li.writing:hover {
     text-decoration: underline;
     text-decoration-color: var(--underline-color);
     text-underline-position: from-font;
-    text-decoration-thickness: 0.1rem;
 }
 @media screen and (max-width: 600px) {
     li.writing {
