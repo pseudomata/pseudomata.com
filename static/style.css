@@ -2,6 +2,7 @@
     --primary: #29242f;
     --link: #29242f;
     --link-decoration: #c35360;
+    --underline-color: #d4d4d4;
 }
 @font-face {
     font-family: "Hubot Sans";
@@ -175,7 +176,7 @@ footer {
 a {
     color: var(--link);
     text-decoration: underline;
-    text-decoration-color: var(--link-decoration);
+    text-decoration-color: var(--underline-color);
     text-underline-position: from-font;
     text-decoration-thickness: 0.1rem;
 }
@@ -183,7 +184,7 @@ a:visited {
     color: var(--link);
 }
 a:hover {
-    text-decoration-color: var(--link-decoration);
+    text-decoration-color: var(--link);
 }
 h1,
 h2,
