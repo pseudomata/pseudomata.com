@@ -59,6 +59,7 @@ code {
         "ss07" 1,
         "ss08" 1;
     font-size: 1rem;
+    font-weight: 300;
     padding: 0.2rem 0.2rem 0.1rem 0.2rem;
     background: #29242f0f;
     border: 0.01rem solid #29242f26;
@@ -78,6 +79,7 @@ pre.code {
         "ss07" 1,
         "ss08" 1;
     font-size: 1rem;
+    font-weight: 300;
     background-color: #efefef;
     padding: 1rem 1rem 1rem 1rem;
     border-radius: 0.5rem;
