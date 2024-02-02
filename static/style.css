@@ -124,10 +124,12 @@ header {
     margin-bottom: 2rem;
 }
 .header-img {
-    width: 6rem;
-    height: 6rem;
+    margin-top: 0.75rem;
+    margin-left: 0.75rem;
+    width: 5rem;
+    height: 5rem;
     float: left;
-    border-radius: 6rem;
+    border-radius: 5rem;
 }
 .header-text {
     font-weight: 800;
