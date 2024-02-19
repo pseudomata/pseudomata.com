@@ -270,12 +270,12 @@ li.writing:hover {
         font-stretch: 75%;
         padding-bottom: 1.75rem;
     }
-    writing-date {
+    .writing-date {
         display: none;
     }
 }
 @media screen and (min-width: 600px) {
-    writing-date {
+    .writing-date {
         font-size: 1.25rem;
         float: left;
         margin-left: -7rem;
