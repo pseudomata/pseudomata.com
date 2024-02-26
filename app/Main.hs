@@ -1,8 +1,8 @@
 module Main where
 
-import qualified Website (generate)
-import System.Directory (doesDirectoryExist)
 import Control.Monad (unless)
+import System.Directory (doesDirectoryExist)
+import Website qualified (generate)
 
 -- Paths to directories, assuming the command is run from the root of the repository.
 contentPages :: String
@@ -28,4 +28,4 @@ main = do
   checkDirectories [contentPages, staticAssets, outputDir]
 
   putStrLn "Generating static webpages..."
-  Website.generate contentPages staticAssets outputDir
+  Website.generate

@@ -5,13 +5,23 @@ import Text.Blaze.Html5.Attributes as A
 
 fonts :: [String]
 fonts =
-  [ "/fonts/Hubot-Sans.woff2"
-  , "/fonts/Mona-Sans.woff2"
-  , "/fonts/Monaspace-Neon.woff2"
+  [ "/fonts/Hubot-Sans.woff2",
+    "/fonts/Mona-Sans.woff2",
+    "/fonts/Monaspace-Neon.woff2"
   ]
 
 generateFontPreloads :: [String] -> Html
-generateFontPreloads = mapM_ (\fontPath -> link ! A.rel "preload" ! A.href (toValue fontPath) ! A.as "font" ! A.type_ "font/woff2" ! A.crossorigin "anonymous") fonts
+generateFontPreloads =
+  mapM_
+    ( \fontPath ->
+        link
+          ! A.rel "preload"
+          ! A.href (toValue fontPath)
+          ! A.as "font"
+          ! A.type_ "font/woff2"
+          ! A.crossorigin "anonymous"
+    )
+    fonts
 
 websiteHead :: Html
 websiteHead = H.head $ do
