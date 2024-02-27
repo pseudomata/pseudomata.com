@@ -11,17 +11,7 @@ fonts =
   ]
 
 generateFontPreloads :: [String] -> Html
-generateFontPreloads =
-  mapM_
-    ( \fontPath ->
-        link
-          ! A.rel "preload"
-          ! A.href (toValue fontPath)
-          ! A.as "font"
-          ! A.type_ "font/woff2"
-          ! A.crossorigin "anonymous"
-    )
-    fonts
+generateFontPreloads = mapM_ (\fontPath -> link ! A.rel "preload" ! A.href (toValue fontPath) ! A.as "font" ! A.type_ "font/woff2" ! A.crossorigin "anonymous") fonts
 
 websiteHead :: Html
 websiteHead = H.head $ do
@@ -38,4 +28,4 @@ websiteHead = H.head $ do
 
   meta ! A.name "robots" ! A.content "noindex, nofollow, nosnippet"
 
-  title "Pseudomata"
+  H.title "Pseudomata"
