@@ -1,14 +1,9 @@
 {-# LANGUAGE OverloadedStrings #-}
 
-import Data.Char (toUpper)
 import Text.Blaze.Html5 as H
 import Text.Blaze.Html5.Attributes as A
 
 data Page = About | Writing | Contact | Misc
-
-capitalize :: String -> String
-capitalize [] = []
-capitalize (x : xs) = toUpper x : xs
 
 pageName :: Page -> String
 pageName page = case page of
