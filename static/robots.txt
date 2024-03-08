@@ -1,0 +1,32 @@
+User-agent: *
+Disallow: /
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: openai
+Disallow:/
+
+User-agent: openai.com
+Disallow:/
+
+User-agent: PerplexityBot
+Disallow: /
+
+User-agent: cohere-ai
+Disallow:/
+
+User-agent: anthropic-ai
+Disallow:/
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: Googlebot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
